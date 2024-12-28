@@ -14,12 +14,13 @@ pico_sdk_init()
 
 add_executable(hello_world
     main.c
-    tinyusb/src/class/midi/midi_device.c
 )
 
+add_compile_definitions(
+    PICO_PLATFORM=rp2350
+)
 target_include_directories(hello_world PUBLIC
-    tinyusb/src/*
-    .
+    inc
 )
 target_link_libraries(hello_world
                       pico_stdlib
