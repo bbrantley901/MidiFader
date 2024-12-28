@@ -14,6 +14,7 @@ pico_sdk_init()
 
 add_executable(hello_world
     main.c
+    src/usb_descriptors.c
 )
 
 add_compile_definitions(
@@ -24,6 +25,7 @@ target_include_directories(hello_world PUBLIC
 )
 target_link_libraries(hello_world
                       pico_stdlib
-                      tinyusb_device)
+                      tinyusb_device
+                      tinyusb_board)
 
 pico_add_extra_outputs(hello_world)
