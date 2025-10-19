@@ -155,8 +155,8 @@ enum {
 char const *string_desc_arr[] =
 {
   (const char[]) { 0x09, 0x04 }, // 0: is supported language is English (0x0409)
-  "TinyUSB",                     // 1: Manufacturer
-  "TinyUSB Device",              // 2: Product
+  "Quiss Inc.",                     // 1: Manufacturer
+  "Midi Fader",              // 2: Product
   NULL,                          // 3: Serials will use unique ID if possible
 };
 
